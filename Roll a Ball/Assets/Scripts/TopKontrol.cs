@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
 using TMPro;
+using UnityEngine.SceneManagement;
 
 public class TopKontrol : MonoBehaviour
 {
@@ -49,5 +50,14 @@ public class TopKontrol : MonoBehaviour
             }
         }
       
+    }
+    public void reStartGame()
+    {
+        SceneManager.LoadScene("level1");
+    }
+
+    public void quitGame()
+    {
+        Application.Quit();
     }
 }
